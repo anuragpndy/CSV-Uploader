@@ -1,6 +1,6 @@
 const mongoose= require('mongoose');
 
-mongoose.connect('mongodb://localhost/csv-reader',{ useNewUrlParser: true , useUnifiedTopology: true })
+mongoose.connect('mongodb://0.0.0.0:27017/csv-reader',{ useNewUrlParser: true , useUnifiedTopology: true })
 .then(()=>{console.log('DB connected')})
 .catch((err)=>{console.log(err)});
 const db= mongoose.connection;
